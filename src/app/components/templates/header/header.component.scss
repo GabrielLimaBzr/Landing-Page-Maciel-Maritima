@@ -1,0 +1,74 @@
+.header{
+    background-color: #ffffffad;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 7% 0% 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(5px); /* Pode ajustar o valor de blur conforme preferir */
+    -webkit-backdrop-filter: blur(5px); /* Necessário para compatibilidade com navegadores WebKit */
+  
+  
+    .header-content{
+      width: 100%;
+      display: flex;
+      align-items: center;
+  
+      .header-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      a .header-img{
+        height: 90px;
+      }
+  
+      .header-nav{
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: row;
+        
+          
+        a {
+          font-weight: 400;
+          position: relative;
+          margin: 0px 20px;
+          display: block;
+          padding: 4px 0;
+          font-family: Lato, sans-serif;
+          color: var(--azul);
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: 0.5s;
+    
+          &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--black);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+          }
+    
+          &:hover {
+            color: var(--black);
+          }
+    
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+      
+        }
+      } 
+    }
+  }
