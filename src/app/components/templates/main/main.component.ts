@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  toContato(){
+    document.getElementById("contato").scrollIntoView({behavior: "smooth"});
+  }
+
 }

@@ -1,5 +1,9 @@
 .header{
-    background-color: #ffffffad;
+    -webkit-box-shadow: 0px -1px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 20px -6px rgba(0,0,0,0.75);
+    z-index: 999;
+    background-color: #ffffff8a;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,8 +15,7 @@
     width: 100%;
     backdrop-filter: blur(5px); /* Pode ajustar o valor de blur conforme preferir */
     -webkit-backdrop-filter: blur(5px); /* Necessário para compatibilidade com navegadores WebKit */
-  
-  
+
     .header-content{
       width: 100%;
       display: flex;
@@ -71,4 +74,115 @@
         }
       } 
     }
+}
+
+.toggle-btn{
+  display: none;
+  i{
+    color: var(--azul);
   }
+}
+
+.menu{
+  display: none;
+}
+
+/*  Menu drop  */
+
+.drop-menu{
+  display: none;
+  position: fixed;
+  right: 2rem;
+  top: 78px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.377);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.7rem;
+    justify-content: center;
+    align-items: center;
+
+
+    a{
+      text-decoration: none;
+      color:var(--azul);
+      font-weight: bolder;
+    }
+  }
+}
+
+.drop-menu.open{
+  height: 200px;
+
+}
+
+/*  Responsividade  */
+
+@media(max-width: 992px) {
+
+  .menu{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(15px);
+
+
+    img{
+      margin-left: 25px;
+      width: 100px;
+    }
+  } 
+
+  .header-content, .header-nav, .header{
+    display: none;
+  }
+
+  .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .toggle-btn{
+    display: block;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 15px;
+    right: 2rem;
+
+    i{
+      font-size: 1.6rem;
+    }
+  }
+
+  .drop-menu{
+    display: block;
+  }
+
+}
+
+
+@media(max-width: 576) {
+  .drop-menu{
+    left: 7rem;
+    width: unset;
+    background-color: aqua;
+  }
+
+}

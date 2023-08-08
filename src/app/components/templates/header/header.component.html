@@ -1,14 +1,39 @@
 <header class="header">
     <div class="header-content">
-      <a class="header-logo" href="#">
+      <a class="header-logo" style="cursor: pointer;" (click)="toHome()" routerLink="/home" routerLinkActive="active">
         <img class="header-img" src="assets/logo.svg" alt="Logo" />
       </a>
       <nav class="header-nav">
-        <a href="#">Home</a>
-        <a href="#">Serviços</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="#">Denúncias</a>
+        <nav class="header-nav">
+          <a style="cursor: pointer;" (click)="toHome()" routerLink="/home" routerLinkActive="active">Início</a>
+          <a style="cursor: pointer;" (click)="toSobre()" routerLinkActive="active">Sobre</a>
+          <a style="cursor: pointer;" (click)="toServicos()" routerLinkActive="active">Serviços</a>
+          <a style="cursor: pointer;" (click)="toContato()" routerLinkActive="active">Contato</a>
+        </nav>
       </nav>
     </div>
 </header>
+
+<div class="menu">
+
+  <div class="menu-logo">
+    <a style="cursor: pointer;" (click)="toHome()" routerLink="/home" routerLinkActive="active">
+      <img class="header-img" src="assets/logo.svg" alt="Logo" />
+    </a>
+  </div>
+
+  <div class="toggle-btn" (click)="toggleMenu()">
+    <i [class]="menuIcon"></i>
+  </div>
+
+  
+</div>
+
+<div class="drop-menu" [ngClass]="{ 'open': isMenuOpen }">
+  <nav>
+    <li><a style="cursor: pointer;" (click)="toHome()" routerLink="/home" routerLinkActive="active">Início</a></li>
+    <li><a style="cursor: pointer;" (click)="toSobre()" routerLinkActive="active">Sobre</a></li>
+    <li><a style="cursor: pointer;" (click)="toServicos()" routerLinkActive="active">Serviços</a></li>
+    <li><a style="cursor: pointer;" (click)="toContato()" routerLinkActive="active">Contato</a></li>
+  </nav>
+</div>

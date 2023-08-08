@@ -3,33 +3,22 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 98vh;
     width: 100%;
+    height: 100vh;
+    padding: 0% 7% 0% 7%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    padding: 1% 7% 1% 7%;
   
-    
-  
-    .main-content{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  
-      
       .main-content-apt{
         h2{
             text-align: left;
-            color: #ffffff;
-            font-size: 4vw;
+            color: var(--white);
             line-height: 1.1em;
+            font-size: 4vw;
         }
         p{
-            color: #ffffff;
+            color: var(--white);
             font-size: 1vw;
             text-align: left;
             letter-spacing: 1.1px;
@@ -42,11 +31,11 @@
           float: left;
           padding: 2.3% 4%;
           text-align: center;
-          font-size: 0.8vw;
+          font-size: 1vw;
           text-transform: uppercase;
           transition: 0.5s;
           background-size: 200% auto;
-          color: white;
+          color: var(--white);
           border-radius: 10px;
           display: block;
           border: 0px;
@@ -62,7 +51,7 @@
         .btn-contato:hover {
           background-position: right center;
           /* change the direction of the change here */
-          color: #fff;
+          color: var(--white);
           text-decoration: none;
         }
         
@@ -70,5 +59,34 @@
           transform: scale(0.95);
         }
       }
+}
+
+
+/*  Responsividade  */
+
+@media(max-width: 992px) {
+
+  .main{ 
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .main-content-apt{
+      width: 230px;
+      h2{
+        font-size: 6vw;
+      }
+
+      p{
+        font-size: 2vw;
+      }
+
+      .btn-contato{
+        padding: 10px 20px;
+        font-size: 2vw;
+      }
     }
+  }
 }
