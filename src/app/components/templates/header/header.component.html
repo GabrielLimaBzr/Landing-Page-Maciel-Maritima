@@ -22,9 +22,15 @@
     </a>
   </div>
 
-  <div class="toggle-btn" (click)="toggleMenu()">
-    <i [class]="menuIcon"></i>
+  <div class="toggle-btn">
+    <a style="cursor: pointer;" (click)="toHome()" routerLink="/home" routerLinkActive="active">
+     <span>Início</span>
+    </a>
   </div>
+
+  <!-- <div class="toggle-btn" (click)="toggleMenu()">
+    <i [class]="menuIcon"></i>
+  </div> -->
 
   
 </div>

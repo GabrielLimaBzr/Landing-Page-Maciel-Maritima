@@ -24,9 +24,9 @@
         margin-bottom: 5%;
         background-color: rgb(221, 221, 221);
         width: 55vw;
-        -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.38);
-        -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.38);
-        box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.38);
+        -webkit-box-shadow: 3px 1px 22px 1px rgba(0,0,0,0.36);
+        -moz-box-shadow: 3px 1px 22px 1px rgba(0,0,0,0.36);
+        box-shadow: 3px 1px 22px 1px rgba(0,0,0,0.36);
 
         display: flex;
         flex-direction: row;
@@ -181,30 +181,82 @@ textarea {
 
 @media(max-width: 992px) {
 
+    .input {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        padding-top: 1.5rem;
+        &+.input {
+            margin-top: 0.5rem;
+        }
+    }
+
+    .input-field {
+        font-size: 0.8rem;
+        border-bottom: 1px solid #c9c9c9;
+       
+    }
+
+    .input-label {
+        
+        top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .action-button {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .social{
+        a{
+            padding: 0.5rem;
+
+            img{
+                width: 1rem;
+            }
+        
+        }
+    }
     .container{
         width: 100%;
+        padding-top: 1rem;
 
+/*         .container-title{
+            .title{
+                font-size: 2.5vw;
+            }
+        } */
         .card{
             
-            width: 90%;
+            margin-bottom: 4rem;
+            width: 98%;
             background-color: #e6e6e6;
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
+            -webkit-box-shadow: 0px 0px 49px -2px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 0px 49px -2px rgba(0,0,0,0.24);
+box-shadow: 0px 0px 49px -2px rgba(0,0,0,0.24);
+            margin-top: 0.7rem;
 
             .card-form{
                 background-color: #e6e6e6;
                 border-radius: 8px;
                 width: 100%;
+                padding-top: 0rem;
             }
 
             .card-map{
-                background-color: #e6e6e6;
                 border-radius: 8px;
                 width: 100%;
+                
+                
 
                 iframe{
+                    margin-bottom: -8px;
                     border-radius: 8px;
                     width: 100%;
                 }

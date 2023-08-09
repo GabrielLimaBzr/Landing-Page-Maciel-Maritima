@@ -123,7 +123,14 @@
       text-decoration: none;
       color:var(--azul);
       font-weight: bolder;
+      transition: 0.5s;
+
+      &:hover {
+        color: var(--black);
+      }
     }
+
+    
   }
 }
 
@@ -163,8 +170,15 @@
     display: block;
     color: rgb(255, 255, 255);
     position: fixed;
-    top: 15px;
+    top: 19px;
     right: 2rem;
+
+    a{
+      text-decoration: none;
+      color: var(--azul);
+      font-weight: bold;
+
+    }
 
     i{
       font-size: 1.6rem;

@@ -41,11 +41,15 @@
   font-size:2em;
   margin:0% 1%;
   }
+
+  a .header-img{
+    height: 100px;
+  }
   
   @media (max-width:720px){
   .footer{
   text-align:left;
-  padding:5%;
+  padding:2%;
   }
   .footer .row ul li{
   display:block;
@@ -55,8 +59,22 @@
   .footer .row a i{
   margin:0% 3%;
   }
+  a .header-img{
+    height: 50px;
   }
 
-  a .header-img{
-    height: 100px;
+  h2{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  h3{
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+  }
+  }
+
+
+  .card-2{
+    width: 100%;
   }

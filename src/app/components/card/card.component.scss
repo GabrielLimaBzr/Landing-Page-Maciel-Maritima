@@ -3,18 +3,21 @@
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container .card{
     position: relative;
     cursor: pointer;
-    margin-left: 20px;
-    margin-right: 20px;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .container .card .face{
-    width: 300px;
+    width: 20vw;
+    max-width: 400px;
+    min-width: 300px;
     height: 250px;
     transition: 0.5s;
     border-radius: 10px;
@@ -92,6 +95,7 @@
 .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 .container .card .face.face2 .content a{
@@ -108,3 +112,49 @@
     background: #cc2929;
     color: #fff;
 }
+
+.wrp{
+    flex-wrap: wrap;
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 846px) {
+    .container .card {
+        flex-direction: row;
+    }
+
+    .container .card .face {
+        transform: translateY(0);
+        width: 50%;
+        transition: none;
+    }
+
+    .container .card .face.face1 {
+        background: none;
+        transform: translateY(0); /* Manter a face1 no lugar */
+        transition: none;
+    }
+
+    .container .card .face.face2 {
+        position: relative;
+        background: none;
+        transform: none;
+        box-shadow: none;
+        width: 100%;
+        transition: none;
+    }
+
+    .container .card:hover .face.face2 {
+        transform: none;
+    }
+
+    .container .card .face.face2 .content p {
+        font-size: 1rem;
+    }
+
+    .container .card .face.face2 .content a {
+        color: #333;
+        background: none;
+    }
+}
+
