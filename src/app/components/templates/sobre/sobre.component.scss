@@ -34,7 +34,7 @@
     height: 300px;
     background-position: center;
     background-size: cover;
-    background-image: url('../../../../assets/mar.jpg');
+    background-image: url('../../../../assets/fundo1.png');
 
     color: white;
     display: flex;
@@ -44,9 +44,11 @@
 
     h2{
       font-size: 2vw;
+      text-shadow: 0px 1px 2px #000000;
     }
     h5{
       font-size: 1vw;
+      text-shadow: 0px 1px 2px #000000;
     }
   }
 
