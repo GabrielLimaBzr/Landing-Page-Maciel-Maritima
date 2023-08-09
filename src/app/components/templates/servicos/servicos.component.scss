@@ -57,32 +57,8 @@
     border: 1px solid var(--azul);
 }
 
-
-@media screen and (max-width: 846px) {
-  .card-xl{
-    display: none;
-  }
-  
-}
-
-@media screen and (max-width: 768px) {
-
-  .s-content{
-    width: 100%;
-
-    .s-content-apt{
-      p{
-        font-size: 2vw !important;
-        line-height: 2vw !important;
-      }
-    }
-    
-  }
-
-}
-
 .cartoes{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -135,3 +111,32 @@
   }
 }
 }
+
+
+@media screen and (max-width: 846px) {
+  .card-xl{
+    display: none;
+  }
+
+  .cartoes{
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .s-content{
+    width: 100%;
+
+    .s-content-apt{
+      p{
+        font-size: 2vw !important;
+        line-height: 2vw !important;
+      }
+    }
+    
+  }
+
+}
+

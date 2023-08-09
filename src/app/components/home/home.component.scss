@@ -1,4 +1,60 @@
-#servicos{
-    height: 1000vh;
+.container{
+  margin-bottom: 5%;
     width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../../assets/mar.jpg');
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+      font-size: 2vw;
+    }
+    h5{
+      font-size: 1vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container{
+      height: 10vh;
+
+      h2{
+        font-size: 2.5vw;
+      }
+      h5{
+        font-size: 1.4vw;
+      }
+    }
+
+
+    .s-content{
+      width: 100%;
+
+      .s-content-apt{
+        p{
+          font-size: 2vw;
+          line-height: 2vw;
+        }
+      }
+      
+    }
+
+  }
+
+ @media screen and (max-width: 992px) {
+  .container{
+  height: 10vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container{
+  background-attachment: fixed;
+
+  }
 }
