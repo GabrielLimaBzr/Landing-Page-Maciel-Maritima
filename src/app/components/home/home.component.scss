@@ -22,6 +22,18 @@
     }
   }
 
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
   @media screen and (max-width: 768px) {
     .container{
       height: 10vh;
@@ -32,6 +44,10 @@
       h5{
         font-size: 1.4vw;
       }
+    }
+
+    .reveal{
+      transition: all 2s ease;
     }
 
 
@@ -60,3 +76,5 @@
 
   }
 }
+
+
