@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { ContatoComponent } from './components/templates/contato/contato.component';
 import { FooterComponent } from './components/templates/footer/footer.component';
+import { MediaComponent } from './components/media/media.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/templates/footer/footer.component'
     HomeComponent,
     CardComponent,
     ContatoComponent,
-    FooterComponent
+    FooterComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
