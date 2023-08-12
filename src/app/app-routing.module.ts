@@ -5,8 +5,8 @@ import { ObrigadoComponent } from './components/templates/obrigado/obrigado.comp
 import { NotfoundComponent } from './components/templates/notfound/notfound.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  {path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'obrigado-contato', component: ObrigadoComponent},
   { path: 'nao-localizao', component: NotfoundComponent },
   { path: '**', redirectTo: '/nao-localizao' },
