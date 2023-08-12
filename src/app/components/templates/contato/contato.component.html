@@ -6,22 +6,35 @@
 
     <div class="card">
         <div class="card-form">
-            <form class="form">
+            <form class="form" action="https://formsubmit.co/diretoria@macielmaritima.com.br" method="POST">
                 <div class="input">
-                    <input type="text" class="input-field" value="" required/>
-                    <label class="input-label">Nome:</label>
+                    <input type="text" class="input-field" name="name" required/>
+                    <label class="input-label">*Nome:</label>
                 </div>
                 <div class="input">
-                    <input type="text" class="input-field" value="" required/>
-                    <label class="input-label">Email:</label>
+                    <input type="email" class="input-field" name="email" required/>
+                    <label class="input-label">*Email:</label>
                 </div>
                 <div class="input">
-                    <textarea class="input-field" id="assunto" name="assunto" rows="5" cols="33" required></textarea>
-                    <label class="input-label">Assunto:</label>
+                    <textarea
+                     class="input-field textarea" id="assunto" name="message" 
+                     rows="5" cols="33" required
+                     placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <label class="input-label">*Assunto:</label>
+                </div>
+                <div class="aviso">           
+                    <span>* Campos obrigatórios</span>
                 </div>
                 <div class="action">
-                    <button class="action-button">Enviar</button>
+                    <button type="submit" class="action-button">Enviar</button>
                 </div>
+                <input type="hidden" name="_next" value="http://192.168.1.103:4200/obrigado-contato">
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="hidden" name="_cc" value="gabriel18lb@outlook.com">
+                <input type="hidden" name="_blacklist" value="spam, hacker, sql, roubo, select">
+
+
+
             </form>
             
             <div class="social">

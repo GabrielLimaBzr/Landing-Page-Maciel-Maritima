@@ -13,6 +13,9 @@ import { CardComponent } from './components/card/card.component';
 import { ContatoComponent } from './components/templates/contato/contato.component';
 import { FooterComponent } from './components/templates/footer/footer.component';
 import { MediaComponent } from './components/media/media.component';
+import { ObrigadoComponent } from './components/templates/obrigado/obrigado.component';
+import { NotfoundComponent } from './components/templates/notfound/notfound.component';
+
 
 
 @NgModule({
@@ -26,7 +29,9 @@ import { MediaComponent } from './components/media/media.component';
     CardComponent,
     ContatoComponent,
     FooterComponent,
-    MediaComponent
+    MediaComponent,
+    ObrigadoComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

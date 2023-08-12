@@ -68,7 +68,7 @@
 }
 
 .input-label {
-	color: #646464;
+	color: #818181;
 	position: absolute;
 	top: 1.5rem;
 	transition: .25s ease;
@@ -82,7 +82,7 @@
 	border-bottom: 2px solid #c9c9c9; 
 	font: inherit;
 	font-size: 1.125rem;
-	padding: .25rem 0;
+	padding: 0.25rem 0;
 	&:focus, &:valid {
 		outline: 0;
 		border-bottom-color: var(--azul);
@@ -99,7 +99,7 @@ textarea {
 
 
 .action {
-	margin-top: 5%;
+	margin-top: 2%;
 }
 
 /* .action-button {
@@ -179,7 +179,35 @@ textarea {
     }
 }
 
+.aviso{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        margin-top: 1%;
+        font-size: 0.7vw;
+        text-align: center;
+        color: #81818177;
+    }
+
+}
+
 @media(max-width: 992px) {
+
+    .aviso{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            margin-top: 1%;
+            font-size: 1vh;
+            text-align: center;
+            color: #7575758e;
+        }
+    
+    }
 
     .input {
         display: flex;
@@ -265,3 +293,10 @@ textarea {
     
 
 }
+
+.textarea::placeholder{
+    color: #3b3b3b2f;
+    padding-top: 1.3rem;
+}
+
+

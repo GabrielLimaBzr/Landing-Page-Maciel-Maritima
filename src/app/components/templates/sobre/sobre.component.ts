@@ -17,7 +17,7 @@ export class SobreComponent {
       imageAlt: 'foto2'
     },
     {
-      imageSrc: '../../assets/images/foto3.jpeg',
+      imageSrc: '../../assets/images/foto3.jpg',
       imageAlt: 'foto3'
     },
   ]
